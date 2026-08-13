@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <title>Chargement...</title>
+    <link rel="icon" type="image/png" href="images/XXR_MIC.png" />
+
+    <script type="text/javascript">
+    // ============================================================
+    // PROTECTION ANTI-SCRAPER & BLOCAGE CLAVIER
+    // ============================================================
+    (function() {
+        var w = window, d = document, n = navigator;
+
+        // 1. Détection bots simples (UA)
+        var ua = (n.userAgent || '').toLowerCase();
+        var bots = ['httrack', 'wget', 'curl', 'spider', 'crawl', 'bot', 'scraper', 'offline', 'mirror', 'webcopier', 'webzip', 'teleport', 'webcapture', 'grab', 'fetch', 'harvest', 'siphon', 'leech', 'ripper', 'cloner', 'python', 'java', 'urllib', 'libwww', 'httpunit', 'nutch', 'sitecopy', 'blackwidow', 'webstripper', 'netants'];
+        for (var i = 0; i < bots.length; i++) {
+            if (ua.indexOf(bots[i]) > -1) { d.documentElement.innerHTML = ''; throw new Error(''); }
+        }
+
+        // 2. Détection automation (Puppeteer/Selenium)
+        if (n.webdriver === true || w.callPhantom || w._phantom || w.phantom || w.__nightmare || w.__selenium_evaluate || w.__webdriver_evaluate) {
+            d.documentElement.innerHTML = ''; throw new Error('');
+        }
+
+        // 3. Blocage raccourcis clavier (F12, Ctrl+S/P/U, etc.)
+        d.addEventListener('keydown', function(e) {
+            var k = e.key, c = e.ctrlKey, s = e.shiftKey;
+            if (k === 'F12') { e.preventDefault(); return false; }
+            if (c && s && (k === 'I' || k === 'J' || k === 'C' || k === 'K')) { e.preventDefault(); return false; }
+            if (c && (k === 'u' || k === 's' || k === 'p')) { e.preventDefault(); return false; }
+            if (k === 'PrintScreen' || k === 'Snapshot') { e.preventDefault(); return false; }
+        }, true);
+
+        // 4. Blocage clic-droit, sélection, copie
+        d.oncontextmenu = function() { return false; };
+        d.onselectstart = function() { return false; };
+        d.ondragstart = function() { return false; };
+        d.oncopy = function() { return false; };
+        d.oncut = function() { return false; };
+    })();
+    </script>
+
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=about:blank" />
+        <style>html,body,*{display:none!important;visibility:hidden!important;}</style>
+    </noscript>
+
+    <script crossorigin="" src="assets/index-yNAhS7KS.js" type="module"></script>
+    <link crossorigin="" href="assets/index-Dwcwju8v.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- Honeypot anti-aspirateur (liens invisibles pièges) -->
+    <div aria-hidden="true" style="position:absolute;left:-99999px;top:-99999px;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none;">
+        <a href="./trap/loop/1/2/3/4/5/6/7/8/9/10/index.html">.</a>
+        <a href="./trap/deep/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/index.html">.</a>
+        <a href="./clone-trap/level1/level2/level3/level4/level5/level6/level7/index.html">.</a>
+    </div>
+</body>
+</html>
